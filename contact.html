@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — AEGYR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo">AEGYR<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+      <li><a href="crises-reelles.html">Crises réelles</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Tester ma préparation</a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<section class="hero" style="padding:90px 0 70px;">
+  <div class="container">
+    <span class="coord">Contact</span>
+    <h1 style="font-size:clamp(36px,5vw,56px);">Testez votre niveau de préparation <em>(30 min gratuit)</em>.</h1>
+    <p class="lede">Décrivez votre situation en quelques lignes. Je vous réponds personnellement, sous 24h ouvrées.</p>
+  </div>
+</section>
+
+<section class="section-border">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <form id="contact-form" class="form-grid">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email professionnel</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="company">Organisation</label>
+              <input type="text" id="company" name="company">
+            </div>
+            <div class="field">
+              <label for="topic">Sujet</label>
+              <select id="topic" name="topic">
+                <option>Audit flash (30 min)</option>
+                <option>Atelier opérationnel (1 jour)</option>
+                <option>Exercice de crise</option>
+                <option>Intervention sur mesure</option>
+                <option>Autre</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Votre situation</label>
+            <textarea id="message" name="message" required placeholder="En quelques lignes : votre contexte, et ce qui vous amène à nous contacter aujourd'hui."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="border:none; cursor:pointer; width:fit-content;">Envoyer le message</button>
+          <p id="form-msg" class="form-msg"></p>
+        </form>
+      </div>
+      <div>
+        <ul class="info-list">
+          <li><span class="label">Email</span><span><a href="mailto:info@aegyr.be">info@aegyr.be</a></span></li>
+          <li><span class="label">Siège social</span><span>Région de Namur, Belgique</span></li>
+          <li><span class="label">Disponibilité</span><span>Lun–Ven, 9h–18h</span></li>
+        </ul>
+        <p style="margin-top:32px; color:#5A5A54; font-size:14px;">L'adresse complète du siège social figure dans nos mentions légales.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="logo">AEGYR<span>.</span></a>
+        <p style="margin-top:14px; max-width:280px; color:#5A5A54; font-size:14px;">Cabinet d'expertise en gestion de crise et résilience opérationnelle.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+            <li><a href="crises-reelles.html">Crises réelles</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@aegyr.be">info@aegyr.be</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AEGYR. Tous droits réservés.</span>
+      <span>Siège social — région de Namur, Belgique</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
